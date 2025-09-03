@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoTech by Isadora</title>
+  <meta name="description" content="EcoTech by Isadora - Produtos de tecnologia sustentável que unem inovação e respeito ao meio ambiente.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --verde: #2ecc71;
+      --azul: #3498db;
+      --cinza: #f4f4f4;
+      --preto: #333;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--preto);
+      background-color: var(--cinza);
+    }
+
+    header {
+      background: var(--verde);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      margin: 0;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    #banner {
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #banner img {
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      display: block;
+      object-fit: cover;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .hero {
+      background: white;
+      padding: 4rem 2rem;
+      border-radius: 12px;
+      margin: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .hero h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    .btn {
+      background: var(--azul);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #217dbb;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    footer {
+      background: var(--verde);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EcoTech by Isadora</h1>
+    <nav>
+      <a href="#home">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- BANNER ajustado para usar o arquivo salvo -->
+  <section id="banner" aria-label="Banner promocional">
+    <picture>
+      <!-- versão WebP -->
+      <source srcset="isadora index.webp" type="image/webp">
+      <!-- fallback PNG -->
+      <img src="isadora index.png" 
+           alt="Banner EcoTech by Isadora — Tecnologia sustentável">
+    </picture>
+  </section>
+
+  <section class="hero" id="home">
+    <h2>Tecnologia Sustentável para um Futuro Melhor</h2>
+    <p>Na EcoTech by Isadora, criamos soluções tecnológicas que respeitam o meio ambiente e facilitam o seu dia a dia.</p>
+    <a href="https://wa.me/5500000000000" class="btn" target="_blank">Fale Conosco no WhatsApp</a>
+  </section>
+
+  <section id="produtos">
+    <h2>Nossos Produtos</h2>
+    <div class="produtos">
+      <div class="card">
+        <h3>Carregador Solar Eco+</h3>
+        <p>Carregue seus dispositivos com energia limpa e renovável em qualquer lugar.</p>
+      </div>
+      <div class="card">
+        <h3>Notebook Verde</h3>
+        <p>Fabricado com materiais recicláveis e consumo energético reduzido.</p>
+      </div>
+      <div class="card">
+        <h3>Smart Lamp Sustentável</h3>
+        <p>Iluminação inteligente com baixo consumo e controle por aplicativo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre a EcoTech by Isadora</h2>
+    <p>Fundada com o propósito de unir tecnologia e sustentabilidade, a EcoTech by Isadora busca inovar sem agredir o planeta. Cada produto é pensado para reduzir impactos ambientais e melhorar a qualidade de vida das pessoas.</p>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <p>Quer saber mais? Entre em contato pelo WhatsApp ou envie um e-mail para <strong>contato@ecotechisadora.com</strong>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EcoTech by Isadora - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
